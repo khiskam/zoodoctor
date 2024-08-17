@@ -14,7 +14,7 @@ const splideOptions = {
       perPage: 1,
     },
   },
-  gap: "12px",
+  gap: "8px",
   autoplay: true,
   drag: true,
   paginationDirection: "ttb",

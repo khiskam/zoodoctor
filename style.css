@@ -1,23 +1,26 @@
 .banner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  display: grid;
   justify-items: center;
+
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
 .banner__title {
-  color: var(--primary-color);
+  font-size: 32px;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 32px;
+
+  color: var(--primary-color);
 }
 
 .banner__subtitle {
-  color: var(--text-color);
-  /* font-size: 20px; */
-  font-weight: 500;
   margin-top: 4px;
+
+  font-weight: 500;
+
+  color: var(--text-color);
 }
 
 .banner__img {
@@ -25,20 +28,23 @@
 }
 
 .about {
-  background-color: var(--white-color);
   margin-top: 32px;
   padding: 32px;
-  border-radius: 12px;
+
+  background-color: var(--white-color);
+
+  border-radius: var(--border-radius);
 }
 
 .about__inner {
   display: grid;
+
   gap: 16px;
 }
 
 .about__info {
-  display: grid;
   align-items: center;
+  display: grid;
 }
 
 .about__text {
@@ -50,40 +56,49 @@
 }
 
 .gallery {
-  background-color: var(--white-color);
   margin-top: 32px;
   padding: 32px;
-  border-radius: 12px;
+
+  background-color: var(--white-color);
+
+  border-radius: var(--border-radius);
 }
 
 .gallery__img {
-  width: 100%;
   height: 200px;
+  width: 100%;
+
+  border-radius: var(--border-radius);
   object-fit: cover;
 }
 
 .contacts__inner,
 .subscription__inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
   align-items: center;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 32px;
 }
 
 .contacts__map {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 
 .contacts__info,
 .subscription__info {
   display: grid;
+
   gap: 8px;
 }
 
 .contacts__item {
   display: flex;
+
   color: var(--text-color);
+
   gap: 8px;
 }
 
@@ -93,20 +108,24 @@
 
 .label {
   display: grid;
-  gap: 8px;
+
   color: var(--text-color);
+
+  gap: 8px;
 }
 
 .input {
-  border: none;
-  outline: 1px solid #eeeeee;
   padding: 8px 12px;
-  border-radius: 12px;
+
   color: var(--text-color);
+  border: none;
+  outline: 1px solid var(--light-gray-color);
+
+  border-radius: var(--border-radius);
 }
 
 .input::placeholder {
-  color: #8d98ac;
+  color: var(--placeholder-color);
 }
 
 .subscription__img {
@@ -114,14 +133,17 @@
 }
 
 .alert {
-  padding: 12px;
-  border-radius: 12px;
-  color: var(--white-color);
-  width: fit-content;
   position: fixed;
   bottom: 12px;
   left: -100%;
-  transition: 400ms;
+  padding: 12px;
+  width: fit-content;
+
+  color: var(--white-color);
+
+  transition: var(--transition);
+
+  border-radius: var(--border-radius);
 }
 
 .alert_active {
@@ -141,7 +163,10 @@
     font-size: 28px;
   }
 
-  .contacts__inner,
+  .contacts__inner {
+    grid-template-columns: 1fr;
+  }
+
   .subscription__inner {
     grid-template-columns: 1fr;
   }
@@ -159,8 +184,8 @@
 
 @media screen and (max-width: 576px) {
   .banner__title {
-    text-transform: unset;
     font-size: 20px;
+    text-transform: unset;
   }
 
   .about__text {

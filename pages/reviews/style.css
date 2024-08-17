@@ -1,42 +1,116 @@
+.faq__inner {
+  display: grid;
+
+  gap: 16px;
+}
+
+.accordion {
+  display: grid;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid var(--light-gray-color);
+
+  gap: 12px;
+}
+
+.accordion:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+.accordion__headline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 16px;
+}
+
+.accordion__title {
+  font-weight: 500;
+
+  color: var(--text-color);
+}
+
+.accordion__descr-wrapper {
+  display: grid;
+
+  transition: var(--transition);
+
+  grid-template-rows: 0fr;
+}
+
+.accordion__descr-wrapper_active {
+  grid-template-rows: 1fr;
+}
+
+.accordion__descr {
+  overflow: hidden;
+
+  color: var(--text-color);
+}
+
+.accordion__btn-text {
+  display: block;
+
+  transition: var(--transition);
+}
+
+.accordion__btn-text_active {
+  transform: rotate(180deg);
+}
+
 .reviews__inner {
   display: grid;
+
   gap: 16px;
 }
 
 .reviews-card {
   display: grid;
+
   grid-template-columns: auto 1fr;
+
   gap: 24px;
 }
 
 .reviews-card__img {
-  height: 48px;
-  width: 48px;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 48px;
   justify-content: center;
-  border-radius: 50%;
-  color: var(--white-color);
+  width: 48px;
+
   font-size: 24px;
   font-weight: 500;
+
+  color: var(--white-color);
+
+  border-radius: 50%;
 }
 
 .reviews-card__info {
   display: grid;
-  gap: 4px;
-  border-bottom: 1px solid #eeeeee;
   padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--light-gray-color);
+
+  gap: 4px;
 }
 
 .reviews-card:last-child > .reviews-card__info {
-  border-bottom: none;
   padding-bottom: 0;
+
+  border-bottom: none;
 }
 
 .reviews-card__email {
-  color: #8d98ac;
   overflow: hidden;
+
   text-overflow: ellipsis;
+
+  color: var(--placeholder-color);
 }
 
 .reviews-card__text {
@@ -61,59 +135,6 @@
 
 .reviews-card:last-child > .reviews-card__img {
   background-color: #7aa2e8;
-}
-
-.faq__inner {
-  display: grid;
-  gap: 16px;
-}
-
-.accordion {
-  display: grid;
-  gap: 12px;
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 16px;
-}
-
-.accordion:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.accordion__headline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.accordion__title {
-  color: var(--text-color);
-  font-weight: 500;
-}
-
-.accordion__descr-wrapper {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 400ms;
-}
-
-.accordion__descr-wrapper_active {
-  grid-template-rows: 1fr;
-}
-
-.accordion__descr {
-  color: var(--text-color);
-  overflow: hidden;
-}
-
-.accordion__btn-text {
-  transition: 400ms;
-  display: block;
-}
-
-.accordion__btn-text_active {
-  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 576px) {

@@ -1,8 +1,10 @@
 .logo {
-  display: flex;
-  gap: 8px;
   align-items: center;
+  display: flex;
+
   text-decoration: none;
+
+  gap: 8px;
 }
 
 .logo__icon {
@@ -10,8 +12,9 @@
 }
 
 .logo__text {
-  color: var(--primary-color);
   font-weight: 600;
+
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 576px) {
