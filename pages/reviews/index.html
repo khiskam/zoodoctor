@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <header class="header"></header>
+
+      <section class="faq">
+        <h2 class="title">Часто задаваемые вопросы</h2>
+
+        <div class="faq__inner">
+          <div class="accordion">
+            <div class="accordion__headline">
+              <p class="accordion__title">
+                Как часто нужно приводить собаку на осмотр к ветеринару?
+              </p>
+              <button class="btn accordion__btn">
+                <span class="accordion__btn-text">▽</span>
+              </button>
+            </div>
+
+            <div class="accordion__descr-wrapper">
+              <p class="accordion__descr">
+                Рекомендуется посещать ветеринара как минимум раз в год для
+                общего осмотра. Это поможет выявить любые скрытые проблемы со
+                здоровьем на ранней стадии. Щенкам и пожилым собакам могут
+                потребоваться более частые визиты.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__headline">
+              <p class="accordion__title">
+                Моей кошке назначили лекарства. Как правильно давать ей
+                таблетки, если она отказывается их глотать?
+              </p>
+              <button class="btn accordion__btn">
+                <span class="accordion__btn-text">▽</span>
+              </button>
+            </div>
+
+            <div class="accordion__descr-wrapper">
+              <p class="accordion__descr">
+                Вы можете попробовать спрятать таблетку в любимом лакомстве или
+                размельчить её и смешать с едой. Если кошка все равно
+                отказывается, проконсультируйтесь с нашим ветеринаром, возможно,
+                есть альтернативные формы препарата.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__headline">
+              <p class="accordion__title">
+                Какие прививки обязательны для котят?
+              </p>
+              <button class="btn accordion__btn">
+                <span class="accordion__btn-text">▽</span>
+              </button>
+            </div>
+
+            <div class="accordion__descr-wrapper">
+              <p class="accordion__descr">
+                Основные прививки для котят включают вакцинацию против
+                панлейкопении, кальцивируса, ринотрахеита и бешенства. Первая
+                вакцинация проводится в возрасте 8-9 недель, с последующими
+                ревакцинациями по графику.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__headline">
+              <p class="accordion__title">
+                Моя собака постоянно чешется. Что это может быть?
+              </p>
+              <button class="btn accordion__btn">
+                <span class="accordion__btn-text">▽</span>
+              </button>
+            </div>
+
+            <div class="accordion__descr-wrapper">
+              <p class="accordion__descr">
+                Постоянный зуд у собаки может быть вызван блохами, аллергией,
+                кожными инфекциями или даже стрессом. Лучше всего записаться на
+                прием к ветеринару для точной диагностики и назначения лечения.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__headline">
+              <p class="accordion__title">
+                Какие услуги предоставляет ваша клиника?
+              </p>
+              <button class="btn accordion__btn">
+                <span class="accordion__btn-text">▽</span>
+              </button>
+            </div>
+
+            <div class="accordion__descr-wrapper">
+              <p class="accordion__descr">
+                Мы предлагаем широкий спектр ветеринарных услуг, включая
+                профилактические осмотры, вакцинацию, хирургические операции,
+                стоматологию, УЗИ и лабораторные исследования. Также у нас есть
+                услуги груминга и чипирования.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="title">Отзывы</h2>
+
+        <div class="reviews__inner">
+          <div class="reviews-card">
+            <div class="reviews-card__img"><span>o</span></div>
+            <div class="reviews-card__info">
+              <span class="reviews-card__email">olga.petrenko@example.com</span>
+              <p class="reviews-card__text">
+                Большое спасибо всем сотрудникам клиники за профессионализм и
+                заботу о нашем питомце! После сложной операции наш кот быстро
+                пошел на поправку. Особая благодарность врачу за внимание к
+                деталям и чуткое отношение к животным. Теперь только к вам!
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <div class="reviews-card__img"><span>i</span></div>
+            <div class="reviews-card__info">
+              <span class="reviews-card__email">ivanov.alex@example.com</span>
+              <p class="reviews-card__text">
+                Очень довольны услугами вашей клиники! Наш пёсик боялся
+                докторов, но тут его приняли с такой лаской, что он даже не
+                понял, как ему сделали прививку. Рекомендую всем владельцам
+                животных обращаться сюда!
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <div class="reviews-card__img"><span>m</span></div>
+            <div class="reviews-card__info">
+              <span class="reviews-card__email"
+                >maria.smirnova@example.com</span
+              >
+              <p class="reviews-card__text">
+                Никогда не думала, что ветеринар может быть таким внимательным.
+                Кошка чувствовала себя спокойно и уверенно во время осмотра.
+                Спасибо за советы по уходу, они действительно помогли улучшить
+                состояние нашей любимицы!
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <div class="reviews-card__img"><span>s</span></div>
+            <div class="reviews-card__info">
+              <span class="reviews-card__email"
+                >sergey.kuznetsov@example.com</span
+              >
+              <p class="reviews-card__text">
+                Были в вашей клинике впервые, и остались в восторге от уровня
+                сервиса. Весь персонал очень дружелюбный, и наш котик получил
+                профессиональную помощь. Теперь мы знаем, куда обращаться в
+                случае необходимости.
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <div class="reviews-card__img"><span>s</span></div>
+            <div class="reviews-card__info">
+              <span class="reviews-card__email"
+                >svetlana.romanova@example.com</span
+              >
+              <p class="reviews-card__text">
+                Спасибо за то, что спасли нашего попугая! Врач быстро поставил
+                правильный диагноз и назначил лечение. Мы уже видим улучшения, и
+                всё это благодаря вам. Обязательно будем рекомендовать вашу
+                клинику всем друзьям.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

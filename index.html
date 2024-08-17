@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"></header>
+
+      <section class="banner">
+        <div class="banner__info">
+          <h1 class="banner__title">Квалифицированная ветеринарная помощь</h1>
+          <p class="banner__subtitle">
+            Прививаем, диагностируем, оперируем, даем рекомендации.
+          </p>
+          <a href="/pages/services/" class="btn">Ознакомиться с услугами</a>
+        </div>
+
+        <img src="/img/banner_dog.png" alt="dog image" class="banner__img" />
+      </section>
+
+      <section class="gallery">
+        <h2 class="title">Фото нашей клиники</h2>
+
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic1.png"
+                  alt="clinic1"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic2.png"
+                  alt="clinic2"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic3.png"
+                  alt="clinic3"
+                  class="gallery__img"
+                />
+              </li>
+
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic4.png"
+                  alt="clinic4"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic5.png"
+                  alt="clinic5"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic6.png"
+                  alt="clinic6"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic7.png"
+                  alt="clinic7"
+                  class="gallery__img"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="/img/clinic8.png"
+                  alt="clinic8"
+                  class="gallery__img"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2 class="title">О нас</h2>
+        <div class="about__inner">
+          <p class="about__text">
+            Дорогой наш посетитель, мы рады приветствовать тебя на сайте
+            ветеринарной клиники Zoo Doctor!
+          </p>
+          <p class="about__text">
+            Возможно, тебе порой бывает трудно понять язык животных, которые
+            пытаются сказать о проблемах со здоровьем. В этом случае на помощь
+            придут ветеринары.
+          </p>
+
+          <p class="about__text">
+            Сегодня ветеринария удивляет своими возможностями. Только
+            представьте, что наши усатые-полосатые пациенты могут получить
+            высококвалифицированную помощь, начинающуюся от консультации
+            терапевта и заканчивающуюся их комфортабельной транспортировкой.
+          </p>
+          <p class="about__text">
+            Мы не дарим здоровье, Мы его Сохраняем. С любовью, Zoo Doctor.
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="title">Контакты</h2>
+
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <p class="contacts__item">
+              <span>Адрес:</span>ул. Краснококшайская, 92, Казань, Республика
+              Татарстан, Россия, 420032
+            </p>
+            <p class="contacts__item"><span>Email:</span>layf@gmail.com</p>
+            <p class="contacts__item">
+              <span>Номер телефона:</span>7(999)-999-99-99
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143472.8554854713!2d48.78040888671875!3d55.8147084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead62653a745f%3A0x1cba76070c158c14!2sVeterinarnaya%20Klinika%20%22Layf%22!5e0!3m2!1sen!2sfr!4v1723718091236!5m2!1sen!2sfr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="contacts__map"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="subscription">
+        <h2 class="title">Оставить заявку</h2>
+
+        <div class="subscription__inner">
+          <img src="/img/cat.png" alt="cat image" class="subscription__img" />
+          <form class="subscription__info">
+            <label class="label">
+              ФИО
+              <input
+                type="text"
+                name="personal_data"
+                placeholder="Введите ФИО"
+                class="input"
+              />
+            </label>
+            <label class="label">
+              Email
+              <input
+                type="text"
+                name="email"
+                placeholder="Введите Email"
+                class="input"
+              />
+            </label>
+            <label class="label">
+              Текст заявки
+              <textarea
+                name="request"
+                placeholder="Введите текст заявки"
+                class="input"
+              ></textarea>
+            </label>
+            <button class="btn">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="alert alert_danger">
+        <p>Пожалуйста, заполните все поля!</p>
+      </div>
+
+      <div class="alert alert_success">
+        <p>Ваша форма отправлена!</p>
+      </div>
+
+      <footer class="footer"></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

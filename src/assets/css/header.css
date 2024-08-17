@@ -1,0 +1,24 @@
+.header {
+  padding: 24px;
+  background-color: var(--white-color);
+  padding: 24px 32px;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <header class="header"></header>
+
+      <section class="services">
+        <h2 class="title">Услуги</h2>
+
+        <div class="services__inner">
+          <div class="services__card card">
+            <img
+              src="/img/vaccination.png"
+              alt="vaccination"
+              class="card__img"
+            />
+            <button class="card__text">Вакцинация</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о вакционации</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Процедура вакцинации защищает вашего питомца от опасных
+                      заболеваний, таких как бешенство, чума, парвовирус и др.
+                      Мы используем только высококачественные вакцины от
+                      проверенных производителей.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 500 рублей (зависит от типа вакцины)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/sterilization.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">Стерилизация</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о стерилизации</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Стерилизация - это безопасная и эффективная процедура,
+                      которая предотвращает нежелательную беременность и решает
+                      ряд проблем со здоровьем вашего питомца.
+                    </span>
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span
+                      >от 3000 рублей (зависит от вида животного и сложности
+                      операции)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img src="/img/haircut.png" alt="sterilization" class="card__img" />
+            <button class="card__text">Стрижка, купание</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о стрижке, купании</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Профессиональные грумеры нашей клиники помогут вашему
+                      питомцу выглядеть ухоженным и красивым. Мы используем
+                      только качественные шампуни и косметику.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span
+                      >от 500 рублей (зависит от размера и породы
+                      животного)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/dental_care.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">Уход за зубами</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация об уходе за зубами</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Мы предлагаем комплексный уход за зубами вашего питомца,
+                      включающий чистку, удаление зубного камня и
+                      полировку.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 1000 рублей (зависит от типа процедуры)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/laboratory.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">
+              Клиническая и биохимическая лаборатория
+            </button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">
+                  Информация о клинической и биохимической лаборатории
+                </h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Современная лаборатория нашей клиники проводит широкий
+                      спектр анализов крови, мочи и кала, которые помогут
+                      своевременно диагностировать заболевания.
+                    </span>
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 300 рублей (зависит от вида анализа)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/chipping.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">Чипирование животных</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о чипировании животных</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Чипирование животного - это надежный способ идентификации
+                      и возвращения потерявшегося питомца. Микрочип вживляется
+                      под кожу и содержит уникальный код.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 1500 рублей</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/grooming.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">Груминг</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о груминге</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Мы предлагаем полный комплекс услуг по грумингу, от
+                      стрижки и купания до тримминга, окраски шерсти и ухода за
+                      когтями.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 1000 рублей (зависит от типа процедуры)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/post_surgery.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">
+              Послеоперационный и дневной стационар
+            </button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">
+                  Информация о послеоперационном и дневном стационаре
+                </h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Мы предоставляем комфортные условия для
+                      послеоперационного восстановления и наблюдения за
+                      питомцем.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span
+                      >от 1000 рублей в сутки (зависит от вида животного и
+                      необходимости дополнительного ухода)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img src="/img/uzi.png" alt="sterilization" class="card__img" />
+            <button class="card__text">
+              УЗИ (УЛЬТРА ЗВУКОВОЕ ИССЛЕДОВАНИЕ)
+            </button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">
+                  Информация об УЗИ (УЛЬТРА ЗВУКОВОЕ ИССЛЕДОВАНИЕ)
+                </h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >УЗИ - это безопасный и информативный метод диагностики,
+                      позволяющий осмотреть внутренние органы животного без
+                      хирургического вмешательства.
+                    </span>
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 1000 рублей (зависит от вида исследования)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img src="/img/xray.png" alt="sterilization" class="card__img" />
+            <button class="card__text">Цифровой рентгене</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о цифровом рентгене</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Цифровой рентген - это современный метод диагностики,
+                      позволяющий получить качественные снимки костей и
+                      внутренних органов животного.
+                    </span>
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span>от 500 рублей (зависит от вида исследования)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/transport.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">Транспортировка животных</button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">Информация о транспортировке животных</h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Мы предлагаем комфортную и безопасную транспортировку
+                      вашего питомца в клинику или на дом.
+                    </span>
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span
+                      >Мы поможем собрать все необходимые документы для выезда
+                      вашего питомца за границу.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__card card">
+            <img
+              src="/img/documentation.png"
+              alt="sterilization"
+              class="card__img"
+            />
+            <button class="card__text">
+              Сбор документов для выезда домашних животных
+            </button>
+
+            <div class="modal-wrapper">
+              <div class="modal">
+                <h2 class="title">
+                  Информация о сборе документов для выезда домашних животных
+                </h2>
+
+                <div class="modal__inner">
+                  <p class="modal__item">
+                    <span>Описание:</span>
+                    <span
+                      >Мы поможем собрать все необходимые документы для выезда
+                      вашего питомца за границу.</span
+                    >
+                  </p>
+
+                  <p class="modal__item">
+                    <span>Цена:</span>
+                    <span
+                      >от 1000 рублей (зависит от вида животного и страны
+                      выезда)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
